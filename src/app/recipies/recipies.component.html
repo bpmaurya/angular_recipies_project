@@ -1,1 +1,12 @@
-<p>recipies works!</p>
+<div class="row">
+  <div class="col-md-5">
+    <app-recipie-list ></app-recipie-list>
+  </div>
+  <div class="col-md-7">
+    <app-recipie-detail *ngIf="selectedRecipies else infoText" [recipe]="selectedRecipies"></app-recipie-detail>
+    <ng-template #infoText>
+      <p>Please Select a Recipe! </p>
+    </ng-template>
+
+  </div>
+</div>

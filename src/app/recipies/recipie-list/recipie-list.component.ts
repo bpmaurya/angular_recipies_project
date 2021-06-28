@@ -1,4 +1,7 @@
+import { Recipe } from './../recipe.model';
 import { Component, OnInit } from '@angular/core';
+import { RecipeService } from '../recipe.service';
+
 
 @Component({
   selector: 'app-recipie-list',
@@ -7,9 +10,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecipieListComponent implements OnInit {
 
-  constructor() { }
+  recipes!:Recipe[];
+
+
+
+
+
+  constructor(private recipeService: RecipeService) { }
 
   ngOnInit(): void {
+    this.recipes = this.recipeService.getRecipes();
+
   }
 
+
+
 }
+
+function output() {
+  throw new Error('Function not implemented.');
+}
+
