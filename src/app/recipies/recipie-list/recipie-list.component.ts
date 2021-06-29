@@ -13,9 +13,6 @@ export class RecipieListComponent implements OnInit {
   recipes!:Recipe[];
 
 
-
-
-
   constructor(private recipeService: RecipeService) { }
 
   ngOnInit(): void {
