@@ -10,19 +10,19 @@
           <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" (click)="onSelect('recipes')" >Recipes</a>
+          <a class="nav-link" routerLinkActive="active" routerLink='/recipes'  >Recipes</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"  (click)="onSelect('shopping-list')">Shopping List </a>
+          <a class="nav-link" routerLinkActive="active" routerLink='/shopping-list'  >Shopping List </a>
         </li>
 
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown" appDropdown>
-          <a class="dropdown-toggle" data-toggle="dropdown" role="button">Manage <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li> <a href="#"> save data</a> </li>
-            <li> <a href="#"> fetch data data</a> </li>
+          <a class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" >Manage <span class="caret"></span></a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" >
+            <li> <a class="dropdown-link" style="cursor: pointer;"> save data</a> </li>
+            <li> <a class="dropdown-link"  style="cursor: pointer;"> fetch data data</a> </li>
 
           </ul>
         </li>
