@@ -21,8 +21,8 @@
         <li class="dropdown" appDropdown>
           <a class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" >Manage <span class="caret"></span></a>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" >
-            <li> <a class="dropdown-link" style="cursor: pointer;"> save data</a> </li>
-            <li> <a class="dropdown-link"  style="cursor: pointer;"> fetch data data</a> </li>
+            <li> <a class="dropdown-link" style="cursor: pointer;" (click)="onSaveData()" > save data</a> </li>
+            <li> <a class="dropdown-link"  style="cursor: pointer;" (click)="onFetchData()" > fetch data data</a> </li>
 
           </ul>
         </li>

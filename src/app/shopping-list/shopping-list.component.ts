@@ -18,6 +18,7 @@ export class ShoppingListComponent implements OnInit,OnDestroy {
    }
 
   ngOnInit(): void {
+    
 
     this.ingredients =this.slService.getIngredients();
     this.igChangedSub= this.slService.ingredientsChanged
@@ -36,6 +37,9 @@ export class ShoppingListComponent implements OnInit,OnDestroy {
     this.igChangedSub.unsubscribe();
 
   }
+
+
+
 
 
 
