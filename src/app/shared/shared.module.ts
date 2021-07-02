@@ -8,9 +8,9 @@ import { PlaceholderDirective } from "./placeholder/placeholder.directive";
 @NgModule({
   declarations: [
     AlertComponent,
-    LoadingSpinnerComponent,
     PlaceholderDirective,
     DropdownDirective,
+    LoadingSpinnerComponent,
 
   ],
   imports: [
@@ -22,7 +22,8 @@ import { PlaceholderDirective } from "./placeholder/placeholder.directive";
     LoadingSpinnerComponent,
     PlaceholderDirective,
     DropdownDirective,
-    CommonModule
+    CommonModule,
+
   ],
   entryComponents: [AlertComponent]
 })
