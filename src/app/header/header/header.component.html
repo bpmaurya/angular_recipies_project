@@ -10,19 +10,26 @@
           <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLinkActive="active" routerLink='/recipes'  >Recipes</a>
+          <a class="nav-link" routerLinkActive="active" routerLink='/recipes' *ngIf="isAuthenticated"  >Recipes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" routerLink='/auth' *ngIf="!isAuthenticated"  >Authentication</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" routerLinkActive="active" routerLink='/shopping-list'  >Shopping List </a>
         </li>
 
+        <li *ngIf="isAuthenticated" >
+          <a class="nav-link" style="cursor: pointer;" (click)="onLogout()" >Logout </a>
+        </li>
+
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown" appDropdown>
+        <li class="dropdown" appDropdown *ngIf="isAuthenticated" >
           <a class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" >Manage <span class="caret"></span></a>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" >
             <li> <a class="dropdown-link" style="cursor: pointer;" (click)="onSaveData()" > save data</a> </li>
-            <li> <a class="dropdown-link"  style="cursor: pointer;" (click)="onFetchData()" > fetch data data</a> </li>
+            <li> <a class="dropdown-link"  style="cursor: pointer;" (click)="onFetchData()" > fetch data</a> </li>
 
           </ul>
         </li>
