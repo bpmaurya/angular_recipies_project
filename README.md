@@ -1,5 +1,8 @@
 [Demo Link](https://resturent-1add7.web.app)
 
+admin:admin@gmail.com
+1234567
+
 # AngularResturent
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.3.
