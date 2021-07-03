@@ -26,4 +26,4 @@ import { RecipiesComponent } from "./recipies.component";
     SharedModule,
   ]
 })
-export class RecipeModule{}
+export class RecipeModule{ }

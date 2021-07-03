@@ -2,7 +2,6 @@ import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { RouterModule } from "@angular/router";
-import { AlertComponent } from "../shared/alert/alert.component";
 import { SharedModule } from "../shared/shared.module";
 import { AuthComponent } from "./auth.component";
 
@@ -14,7 +13,7 @@ import { AuthComponent } from "./auth.component";
     CommonModule,
     FormsModule,
     RouterModule.forChild([
-      {path: 'auth',component:AuthComponent},
+      {path: '', component:AuthComponent},
     ]),
     SharedModule,
 
